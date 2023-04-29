@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,400&display=swap");
+
+:root{
+    --mainColor:#64bcf4;
+    --hoverColor:#64bcf4;
+    --backgroundColor: rgb(240, 232, 240);
+    --darkOne: #312f34;
+    --darkTwo:#45424d;
+    --lightOne:#919191;
+    --lightTwo:#aaa;
+}
+*,
+ *::before,
+ *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+.big-wrapper{
+    padding: 1.7rem;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.container{
+    position: relative;
+    
+    max-width: 81rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    z-index:10;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.logo h3{
+    color: var(--darkTwo);
+    font-size: 1.55rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+.logo img{
+    width: 40px;
+    margin-right: .6rem;
+    margin-top: -0.6rem;
+}
+.links ul{
+display: flex;
+list-style: none;
+align-items: center;
+}
+.links a{
+    color:var(--lightTwo);
+    margin-left: 4.5rem;
+    display: inline-block;
+    transition: .3s;
+}
+.links a:hover {
+color: var(--hoverColor);
+transform: scale(1.05);
+}
+.btn{
+    display:inline-block;
+    padding: .9rem 1.9rem;
+    color: white !important;
+    background-color: var(--mainColor);
+    text-transform: capitalize;
+    border-radius: 16px;
+    transition: 0.3sec;
+}
+.btn:hover{
+    background-color: var(--hoverColor);
+    transform: scale(1) !important;
+
+}
+.showcase-area .container{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+
+}
+.big-title{
+font-size: 1.4rem;
+color: var(--darkOne);
+text-transform: capitalize;
+line-height: 1.4;
+}
+.text{
+    color: var(--lightOne);
+    font-size: 1.1rem;
+    margin: 1.9rem 0 2.5;
+    max-width: 600px;
+    line-height: 2.3;
+}
+.showcase-area .btn{
+    box-shadow: 0 040px 2px rgb(216, 211, 216);
+}
+.person{
+    width: 123%;
+    transform: translate(15%, 25px);
+}
+.toggle-btn{
+display: inline;
+border: none;
+background: var(--darkTwo);
+color: var(--backgroundColor);
+outline: none;
+cursor: pointer;
+height: 39px;
+width: 39px;
+border-radius: 50%;
+}
+.toggle-btn i:last-child{
+    display: none;
+}
+footer{
+    padding: 8vw;
+    background-color: #312f34;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+footer .footer-col{
+    padding-bottom: 40;
+}
+footer h3{
+    color: rgb(240, 232, 240);
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer li{
+    list-style: none;
+    color: #9996a0;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+footer li:hover{
+color: rgb(240, 232, 240);
+}
+footer p{
+    color: #9996a0;
+}
+footer.subscribe{
+    margin-top: 20px;
+}
+footer input{
+    width: 220px;
+    padding: 12px 15px;
+    background-color: rgb(44, 42, 59);
+    border: none;
+    outline: none;
+    color: white;
+
+}
+footer .subscribe a{
+   
+    display:inline-block;
+    padding: .9rem 1.9rem;
+    color: white !important;
+    background-color: var(--mainColor);
+    text-transform: capitalize;
+    border-radius: 16px;
+    
+}
+footer .subscribe a:hover{
+    background-color: var(--hoverColor);
+    transform: scale(1) !important;
+
+}
+footer .copyright{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+footer .copyright p{
+    color: white;
+}
+.pro-links{
+    margin-top: 10px;
+}
+.pro-links i{
+    padding: 10px 13px;
+    border: 1px solid rgb(23, 24, 94);
+    cursor: pointer;
+    transition: .3s ease;
+
+}
+h9{
+    color: white;
+}
+.pro-links i:hover {
+background:rgb(23, 24, 94);
+color: white;
+border: 1px solid rgb(23, 24, 94);
+cursor: pointer;
+border: 2px solid white;
+
+}
